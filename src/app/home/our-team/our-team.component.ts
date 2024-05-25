@@ -17,6 +17,8 @@ export class OurTeamComponent implements AfterViewInit {
   ngAfterViewInit() {
     const originalItem = this.originalItemRef.nativeElement;
     const clonedItem = originalItem.cloneNode(true) as HTMLImageElement;
+    const clonedItemNext = originalItem.cloneNode(true) as HTMLImageElement;
     originalItem.parentNode?.appendChild(clonedItem);
+    originalItem.parentNode?.appendChild(clonedItemNext);
   }
 }

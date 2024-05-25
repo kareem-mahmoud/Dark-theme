@@ -1,0 +1,29 @@
+.main_container {
+    @apply w-full bg-transparent;
+    .inner_container {
+        @apply w-11/12 mx-auto 
+        sm:px-4;
+        .item_container {
+            @apply my-10;
+            .img_container {
+                @apply mb-5;
+                img {
+                    @apply w-full h-[500px] object-cover object-center;
+                }
+            }
+            .tags {
+                @apply mb-10;
+                span {
+                    @apply inline-block border-[1px] rounded-full border-emerald-500 bg-emerald-500 
+                    text-white text-xs py-2 px-3 mr-1;
+                }
+            }
+            h1 {
+                @apply text-5xl font-Playfair mb-3;
+            }
+            p {
+                @apply text-[18px] text-gray-400;
+            }
+        }
+    }
+}

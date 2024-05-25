@@ -1,0 +1,66 @@
+footer {
+    .footer_container {
+        .inner_container1 {
+            @apply border-b-[1px] border-emerald-500 pb-4;
+            .if1 {
+                @apply flex flex-row justify-start items-center;
+                p {
+                    @apply font-Lato text-[16px] font-bold text-white m-0 p-0;
+                }
+            }
+            .if2 {
+
+            }
+            .if3 {
+                @apply flex flex-col justify-center items-end 
+                font-Playfair font-light text-white;
+                .topBtn {
+                    a {
+                        @apply inline-block decoration-0 flex flex-row justify-end items-center 
+                        transition-all duration-500 
+                        hover:[&>span]:text-emerald-500;
+                        span {
+                            @apply inline-block transition-all duration-500;
+                            svg {
+                                @apply size-10 transition-all duration-500;
+                                g {
+                                    path {
+                                        @apply transition-all duration-500;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            span {
+                                svg {
+                                    g {
+                                        path {
+                                            @apply stroke-emerald-500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .inner_container2 {
+            @apply font-Lato mt-4;
+            .if1 {
+                p {
+                    @apply text-sm text-white opacity-60;
+                }
+            }
+            .if2 {
+                div {
+                    @apply md:justify-end mb-0 
+                    flex flex-row justify-start items-center mb-3;
+                    a {
+                        @apply decoration-0 text-sm text-white opacity-60;
+                    }
+                }
+            }
+        }
+    }
+}

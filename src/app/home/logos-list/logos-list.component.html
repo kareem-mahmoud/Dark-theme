@@ -1,0 +1,20 @@
+<div class="logos_container">
+    <div class="lc_container">
+        <div class="inner_container">
+
+            <!-- Logo Carousel animation -->
+            <div class="list_container">
+                <ul #originalList class="ul_list">
+                    @for (item of ulList; track item.id) {
+                        <li>
+                            <img src="{{item.src}}" alt="{{item.title}}" />
+                        </li>
+                    }
+                </ul>  
+            </div>
+            <!-- End: Logo Carousel animation -->
+            
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<section class="lastest_news_container">
+    <div class="inner_container">
+        <div class="title_container">
+            <h2>{{title}}</h2>
+        </div>
+        <div class="news_list">
+            @for (item of reversedList; track $index) {
+                @if ( $index <= 3) {
+                    <a routerLink="/news/{{item.id}}" aria-label="" class="item" >
+                        <h3>{{item.title}}</h3>
+                        <p>{{item.body}}</p> 
+                        @for (tag of item.tags; track $index) {
+                            <span>{{tag | uppercase}}</span>
+                        }   
+                    </a>
+                }
+            }
+            @empty {
+                <span class="text-white">There are no items.</span>
+            }
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- <div class="text-white text-[40px]">
+    {{LastestNewsList.totalResults}}
+</div> -->
+
+<div>
+    <ul class="text-white text-[28px]">
+
+    </ul>
+</div>
+

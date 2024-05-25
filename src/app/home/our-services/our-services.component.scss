@@ -1,0 +1,28 @@
+.services_container {
+    @apply w-full;
+    .title_container {
+        @apply w-full;
+        h2 {
+            @apply w-full py-4 my-5 font-Playfair text-4xl text-white font-bold;
+        }
+    }
+    .inner_container {
+        @apply block gap-3 
+        [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-50px),transparent_100%)];
+        .item {
+            @apply relative inline-block h-[300px] w-full
+            sm:w-2/4 h-[300px]
+            md:w-1/4 h-[400px];
+            img {
+                @apply inline-block h-[400px] w-full object-cover object-center;
+            }
+            p {
+                @apply absolute top-3 left-3 bg-emerald-500 rounded-full 
+                py-1 px-3 text-white text-xs uppercase;
+            }
+            h3 {
+                @apply absolute bottom-3 left-3 w-2/3 text-white font-Playfair text-2xl;
+            }
+        }
+    }
+}

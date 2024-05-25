@@ -1,0 +1,14 @@
+<section class="services_container">
+    <div class="title_container">
+        <h2>{{title}}</h2>
+    </div>
+    <div class="inner_container services_list">
+        @for (service of servicesData; track service.id) {
+        <div class="item">
+            <img src="{{service.img}}" alt="{{service.category}}">
+            <p>{{service.category}}</p>
+            <h3>{{service.title}}</h3>
+        </div>
+        }
+    </div>
+</section>

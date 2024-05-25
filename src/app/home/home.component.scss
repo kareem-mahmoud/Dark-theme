@@ -1,0 +1,41 @@
+.main_container {
+    @apply w-full bg-transparent;
+    .inner_container {
+        @apply w-11/12 mx-auto 
+        sm:px-4;
+        .hero_container {
+            @apply flex flex-col 
+            md:flex-row;
+            .hc1 {
+                @apply w-full py-10 flex flex-col items-start justify-center
+                md:w-[50%];
+                h1 {
+                    @apply text-3xl text-white font-Playfair font-bold w-full
+                    md:text-5xl w-[80%];
+                }
+                p {
+                    @apply text-sm text-white font-light py-5 w-full
+                    sm:text-base w-[80%];
+                }
+                a {
+                    @apply w-[200px] inline-block px-6 py-2 bg-emerald-500 text-white text-sm rounded-full 
+                    flex flex-row justify-center items-center transition-all duration-500
+                    hover:shadow-[0px_0px_15px_rgb(16,185,129,1)];
+                    span {
+                        @apply text-sm;
+                        svg {
+                            @apply size-8;
+                            path {
+                                @apply stroke-white;
+                            }
+                        }
+                    }
+                }
+            }
+            .hc2 {
+                @apply w-full
+                md:w-[50%];
+            }
+        }
+    }
+}

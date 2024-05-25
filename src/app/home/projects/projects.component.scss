@@ -1,0 +1,42 @@
+.projects_container {
+    @apply my-5 mt-20;
+    .title {
+        @apply text-white;
+        h2 {
+            @apply w-full font-Playfair text-4xl text-center mb-10;
+        }
+    }
+    .inner_container {
+        @apply flex flex-row gap-3 
+        [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)];
+        .p_item {
+            @apply w-1/3 inline-block;
+            .img_box {
+                @apply w-full;
+                img {
+                    @apply w-full h-[300px] object-cover object-center;
+                }
+            }
+        }
+        .p_item:first-child {
+            
+        }
+    }
+    .btn_box {
+        @apply w-full flex flex-row justify-center items-center my-10;
+        a {
+            @apply w-[200px] inline-block px-6 py-2 bg-emerald-500 text-white text-sm rounded-full 
+            flex flex-row justify-center items-center transition-all duration-500
+            hover:shadow-[0px_0px_15px_rgb(16,185,129,1)] cursor-pointer;
+            span {
+                @apply text-sm;
+                svg {
+                    @apply size-8 -rotate-90;
+                    path {
+                        @apply stroke-white;
+                    }
+                }
+            }
+        }
+    }
+}

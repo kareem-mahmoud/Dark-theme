@@ -1,0 +1,75 @@
+header.scrolled {
+    @apply fixed left-0 w-full z-[300] animate-[start-animation_500ms_ease-in-out_none_1];
+    @keyframes start-animation {
+        0% {
+          @apply top-3;
+        }
+        100% {
+          @apply top-0
+        }
+    }
+}
+
+
+
+  
+.logo_box,
+.nav_list,
+.nav_list_r {
+    @apply w-fit p-4 bg-black text-white rounded-full text-sm;
+}
+
+.nav_list,.nav_list_r {
+    @apply hidden md:block;
+} 
+
+.bar_btn {
+    @apply bg-white rounded-full border border-black
+            transition-all duration-500 hover:bg-emerald-500 
+            block md:hidden;
+    label {
+        @apply block cursor-pointer transition-all duration-500 rotate-45;
+        svg {
+            @apply transition-all duration-500;
+        }
+    }
+    input[type='checkbox'] {
+        @apply hidden;
+    }
+    .nav_list_menu {
+        @apply hidden fixed top-20 left-0 w-full p-4 h-[100%] z-[100] 
+        bg-emerald-500 transition-all duration-500 
+        text-white text-sm;
+        ul {
+            @apply w-11/12 px-4 py-4 m-auto flex-col
+        }
+    }
+    input:checked ~ .nav_list_menu {
+        @apply block;
+    }
+    input:checked ~ label{
+        @apply rotate-0;
+    }
+
+}
+
+.logo_box {
+    @apply bg-transparent p-0;
+    a {
+        @apply p-4 block bg-black rounded-full transition-all duration-500
+        hover:bg-emerald-500;
+    }
+}
+.nav_list_r {
+    @layer flex_row;
+    @apply bg-transparent p-0;
+    a {
+        @apply p-4 block bg-emerald-500 rounded-full transition-all duration-500
+        hover:shadow-[0px_0px_15px_rgb(16,185,129,1)];
+    }
+}
+
+.text_link {
+    @apply px-2 font-normal text-white text-sm transition-all duration-500 
+    hover:text-emerald-400;
+}

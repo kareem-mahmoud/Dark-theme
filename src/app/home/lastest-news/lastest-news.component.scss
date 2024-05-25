@@ -1,0 +1,32 @@
+.lastest_news_container {
+    @apply w-full flex justify-center items-start;
+    .inner_container {
+        @apply w-full md:w-7/12;
+        .title_container {
+            @apply w-full;
+            h2 {
+                @apply w-full py-4 my-5 mt-0 pt-0 font-Playfair text-4xl text-white text-center font-bold;
+            }
+        }
+        .news_list {
+            @apply w-full;
+            a.item {
+                @apply relative block text-white font-Lato w-full
+                py-5 leading-normal border-t-[1px] border-t-[rgba(255,255,255,0.3)]
+                after:absolute after:top-[-1px] after:left-0 after:block
+                after:w-[0px] after:h-[1px] after:bg-white after:transition-all after:duration-700
+                hover:after:w-full;
+                h3 {
+                    @apply text-[18px] mb-3;
+                }
+                p {
+                    @apply text-sm text-white mb-8;
+                }
+                span {
+                    @apply inline-block rounded-full border-gray-400 border-[1px] mr-1 px-4 py-1 text-gray-400 text-xs;
+                }
+            }
+        }
+    }
+
+}

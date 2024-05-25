@@ -1,0 +1,19 @@
+
+
+
+    <section class="main_container" >
+        <div class="inner_container">
+            <div class="item_container text-white" *ngIf="items">
+                <div class="img_container">
+                    <img src="./assets/placeholder-image.webp" alt="">
+                </div>
+                <div class="tags">
+                    @for (tag of items.tags; track $index) {
+                        <span>{{tag}}</span>
+                    }
+                </div>
+                <h1>{{items.title}}</h1>
+                <p>{{items.body}}</p>
+            </div>
+        </div>
+    </section>
